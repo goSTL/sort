@@ -11,8 +11,8 @@ MergeSort() is a custom Merge Sort function. You can define the comparion regula
 >  The output will be a slice of interface{},you should use o.(YourInputType) to convert o to origibal type
 
 here is a sample code:
-
-    package main
+```go
+package main
     
     import (
       "github.com/FrozenKP/go-Algorithm/sort"
@@ -43,7 +43,7 @@ here is a sample code:
       }
       fmt.Println("[]student: \t",stu2)
     }
-
+```    
 output:
 
     original: 	 [{5 sam} {3 lily} {7 jacky} {1 willy} {2 steve}]
