@@ -16,11 +16,11 @@ func cmp(i,j interface{})bool{
   return ii.id < jj.id
 }
 
-func Example(){
+func ExampleMergeSort(){
   stu:=[]student{{5,"sam"},{3,"lily"},{7,"jacky"},{1,"willy"},{2,"steve"}}
   fmt.Println("original: \t",stu)
 
-  out:=sort.MergeSortPara(stu,cmp)
+  out:=sort.MergeSort(stu,cmp)
   fmt.Println("[]interface{}: \t",out)
 
   stu2:=make([]student,len(out))
@@ -28,8 +28,4 @@ func Example(){
     stu2[a]=out[a].(student)
   }
   fmt.Println("[]student: \t",stu2)
-  // Output:
-  // original:      [{5 sam} {3 lily} {7 jacky} {1 willy} {2 steve}]
-  // []interface{}: [{1 willy} {2 steve} {3 lily} {5 sam} {7 jacky}]
-  // []student:     [{1 willy} {2 steve} {3 lily} {5 sam} {7 jacky}]
 }
