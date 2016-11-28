@@ -1,3 +1,9 @@
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php) 
+
+Sort
+====
+sort whatever you want to sort
+
 Merge Sort
 ----------
 **MergeSort()**
