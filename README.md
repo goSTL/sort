@@ -23,7 +23,7 @@ here is a sample code:
 package main
     
     import (
-      "github.com/FrozenKP/go-Algorithm/sort"
+      "github.com/go-Algorithm/sort"
       "fmt"
     )
     
