@@ -7,14 +7,7 @@ import(
 //This is a custom Merge Sort with parallel compution in 8 threads. 
 //You can define the comparion regulations all by yourself.
 //
-//you should write your own compare function with definition
-//" func(i,j interface{})bool "
-//then MergeSort() will launch Merge Sort with the regulation you define
-//(*you can use i.(YourInputType) to convert i to original type)
-//
-//the output will be a slice of interface{},you should use o.(YourInputType) to convert o to origibal type
-//
-//you should use runtime.GOMAXPROS(int) to set the maximum number of CPUs that can be executing simultaneously.
+//You should use runtime.GOMAXPROS(int) to set the maximum number of CPUs that can be executing simultaneously.
 func MergeSortPara(data interface{}, cmp func(i,j interface{})bool)[]interface{}{
   //data : interface{} to []interface
   value:=reflect.ValueOf(data)
