@@ -15,8 +15,6 @@ import(
 //the output will be a slice of interface{},you should use o.(YourInputType) to convert o to origibal type
 //
 //you should use runtime.GOMAXPROS(int) to set the maximum number of CPUs that can be executing simultaneously.
-//
-//The sort is not guaranteed to be stable.
 func MergeSortPara(data interface{}, cmp func(i,j interface{})bool)[]interface{}{
   //data : interface{} to []interface
   value:=reflect.ValueOf(data)
