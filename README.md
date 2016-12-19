@@ -6,8 +6,11 @@ Sort
 ====
 sort whatever you want
 
-Merge Sort
-----------
+#Index
+-   [Merge Sort](https://github.com/go-Algorithm/sort#Merge Sort)
+-   [Quick Sort](https://github.com/go-Algorithm/sort#Quick Sort)
+
+#Merge Sort
 **MergeSort()**
 
 MergeSort() is a custom Merge Sort function. You can define the comparion regulations all by yourself.
@@ -59,8 +62,7 @@ output:
     []student: 	 [{1 willy} {2 steve} {3 lily} {5 sam} {7 jacky}]
 
 
-Quick Sort
-----------
+#Quick Sort
 **QuickSort()**
 
 QuickSort() is a custom quick sort.
