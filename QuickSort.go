@@ -5,7 +5,7 @@ import (
 )
 
 //QuickSort() is a custom quick sort.
-//Sou should build your own compare function to sort in your own regulations.
+//You should build your own compare function to sort in your own regulations.
 func QuickSort(data interface{}, cmp func(i, j interface{}) bool) []interface{} {
 	value := reflect.ValueOf(data)
 	dataS := make([]interface{}, value.Len())
