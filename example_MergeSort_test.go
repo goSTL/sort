@@ -1,4 +1,4 @@
-package mergesort_test
+package sort_test
 
 import (
   "github.com/go-Algorithm/sort"

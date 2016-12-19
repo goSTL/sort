@@ -1,20 +1,9 @@
-package quicksort_test
+package sort_test
 
 import (
   "github.com/go-Algorithm/sort"
   "fmt"
 )
-
-type student struct{
-  id    int
-  name  string
-}
-
-func cmp(i,j interface{})bool{
-  ii:=i.(student)
-  jj:=j.(student)
-  return ii.id < jj.id
-}
 
 func ExampleQuickSort(){
   stu:=[]student{{5,"sam"},{3,"lily"},{7,"jacky"},{1,"willy"},{2,"steve"}}
