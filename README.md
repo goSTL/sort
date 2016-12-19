@@ -7,8 +7,8 @@ Sort
 sort whatever you want
 
 #Index
--   [Merge Sort](https://github.com/go-Algorithm/sort#Merge Sort)
--   [Quick Sort](https://github.com/go-Algorithm/sort#Quick Sort)
+-   [Merge Sort](https://github.com/go-Algorithm/sort#Merge_Sort)
+-   [Quick Sort](https://github.com/go-Algorithm/sort#Quick_Sort)
 
 #Merge Sort
 **MergeSort()**
