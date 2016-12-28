@@ -1,7 +1,7 @@
 package sort_test
 
 import (
-  "github.com/go-Algorithm/sort"
+  "github.com/goSTL/sort"
   "fmt"
 )
 

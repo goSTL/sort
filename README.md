@@ -7,8 +7,8 @@ Sort
 sort whatever you want
 
 #Index
--   [Merge Sort](https://github.com/go-Algorithm/sort#merge-sort)
--   [Quick Sort](https://github.com/go-Algorithm/sort#quick-sort)
+-   [Merge Sort](https://github.com/goSTL/sort#merge-sort)
+-   [Quick Sort](https://github.com/goSTL/sort#quick-sort)
 
 #Merge Sort
 **MergeSort()**
@@ -26,7 +26,7 @@ here is a sample code:
 package main
     
 import (
-  "github.com/go-Algorithm/sort"
+  "github.com/goSTL/sort"
   "fmt"
 )
 
@@ -78,7 +78,7 @@ here is a sample code:
 package main
     
 import (
-  "github.com/go-Algorithm/sort"
+  "github.com/goSTL/sort"
   "fmt"
 )
 
