@@ -6,7 +6,7 @@ import (
 	"github.com/goSTL/sort"
 )
 
-func main() {
+func ExampleHeapSortInt() {
 	sample := []int{3, 138, 1, 674, 213, 23, 5, 2}
 	fmt.Println(sample)
 
