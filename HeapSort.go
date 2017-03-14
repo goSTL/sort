@@ -1,6 +1,8 @@
 package sort
 
-import "reflect"
+import (
+	"reflect"
+)
 
 func HeapSort(data interface{}, cmp func(i, j interface{}) bool) []interface{} {
 	value := reflect.ValueOf(data)
@@ -105,7 +107,7 @@ func HeapSortInt32(dataS []int32) {
 	maxHeapInt32(dataS, len(dataS))
 }
 
-func heapifyInt32(data []int32, now, last int32) {
+func heapifyInt32(data []int32, now, last int) {
 	if now >= last/2 || now < 0 {
 		return
 	}
@@ -114,9 +116,9 @@ func heapifyInt32(data []int32, now, last int32) {
 	return
 }
 
-func subHeapifyInt32(data []int32, now, last int32) {
+func subHeapifyInt32(data []int32, now, last int) {
 	if now*2+2 < last && !(data[now] >= data[now*2+1] && data[now] >= data[now*2+2]) {
-		var max int32
+		var max int
 		if data[now*2+1] > data[now*2+2] {
 			max = now*2 + 1
 		} else {
@@ -135,7 +137,7 @@ func subHeapifyInt32(data []int32, now, last int32) {
 	return
 }
 
-func maxHeapInt32(data []int32, len int32) {
+func maxHeapInt32(data []int32, len int) {
 	if len <= 1 {
 		return
 	}
@@ -151,7 +153,7 @@ func HeapSortInt64(dataS []int64) {
 	maxHeapInt64(dataS, len(dataS))
 }
 
-func heapifyInt64(data []int64, now, last int64) {
+func heapifyInt64(data []int64, now, last int) {
 	if now >= last/2 || now < 0 {
 		return
 	}
@@ -160,9 +162,9 @@ func heapifyInt64(data []int64, now, last int64) {
 	return
 }
 
-func subHeapifyInt64(data []int64, now, last int64) {
+func subHeapifyInt64(data []int64, now, last int) {
 	if now*2+2 < last && !(data[now] >= data[now*2+1] && data[now] >= data[now*2+2]) {
-		var max int64
+		var max int
 		if data[now*2+1] > data[now*2+2] {
 			max = now*2 + 1
 		} else {
@@ -181,7 +183,7 @@ func subHeapifyInt64(data []int64, now, last int64) {
 	return
 }
 
-func maxHeapInt64(data []int64, len int64) {
+func maxHeapInt64(data []int64, len int) {
 	if len <= 1 {
 		return
 	}
@@ -197,7 +199,7 @@ func HeapSortFloat32(dataS []float32) {
 	maxHeapFloat32(dataS, len(dataS))
 }
 
-func heapifyFloat32(data []float32, now, last float32) {
+func heapifyFloat32(data []float32, now, last int) {
 	if now >= last/2 || now < 0 {
 		return
 	}
@@ -206,9 +208,9 @@ func heapifyFloat32(data []float32, now, last float32) {
 	return
 }
 
-func subHeapifyFloat32(data []float32, now, last float32) {
+func subHeapifyFloat32(data []float32, now, last int) {
 	if now*2+2 < last && !(data[now] >= data[now*2+1] && data[now] >= data[now*2+2]) {
-		var max float32
+		var max int
 		if data[now*2+1] > data[now*2+2] {
 			max = now*2 + 1
 		} else {
@@ -227,7 +229,7 @@ func subHeapifyFloat32(data []float32, now, last float32) {
 	return
 }
 
-func maxHeapFloat32(data []float32, len float32) {
+func maxHeapFloat32(data []float32, len int) {
 	if len <= 1 {
 		return
 	}
@@ -243,7 +245,7 @@ func HeapSortFloat64(dataS []float64) {
 	maxHeapFloat64(dataS, len(dataS))
 }
 
-func heapifyFloat64(data []float64, now, last float64) {
+func heapifyFloat64(data []float64, now, last int) {
 	if now >= last/2 || now < 0 {
 		return
 	}
@@ -252,9 +254,9 @@ func heapifyFloat64(data []float64, now, last float64) {
 	return
 }
 
-func subHeapifyFloat64(data []float64, now, last float64) {
+func subHeapifyFloat64(data []float64, now, last int) {
 	if now*2+2 < last && !(data[now] >= data[now*2+1] && data[now] >= data[now*2+2]) {
-		var max float64
+		var max int
 		if data[now*2+1] > data[now*2+2] {
 			max = now*2 + 1
 		} else {
@@ -273,7 +275,7 @@ func subHeapifyFloat64(data []float64, now, last float64) {
 	return
 }
 
-func maxHeapFloat64(data []float64, len float64) {
+func maxHeapFloat64(data []float64, len int) {
 	if len <= 1 {
 		return
 	}
