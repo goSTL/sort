@@ -1,7 +1,9 @@
 package sort
 
 import (
+	"math/rand"
 	"reflect"
+	"time"
 )
 
 //QuickSort() is a custom quick sort.
@@ -20,6 +22,10 @@ func qsHandle(data []interface{}, left, right int, cmp func(i, j interface{}) bo
 	if left >= right {
 		return
 	}
+
+	rand.Seed(time.Now().Unix())
+	randPivot := rand.Int()%(right-left) + left
+	data[left], data[randPivot] = data[randPivot], data[left]
 
 	pivot := data[left]
 	i, j := left+1, right
@@ -62,6 +68,10 @@ func qsHandleFloat32(data []float32, left, right int) {
 		return
 	}
 
+	rand.Seed(time.Now().Unix())
+	randPivot := rand.Int()%(right-left) + left
+	data[left], data[randPivot] = data[randPivot], data[left]
+
 	pivot := data[left]
 	i, j := left+1, right
 
@@ -102,6 +112,10 @@ func qsHandleFloat64(data []float64, left, right int) {
 	if left >= right {
 		return
 	}
+
+	rand.Seed(time.Now().Unix())
+	randPivot := rand.Int()%(right-left) + left
+	data[left], data[randPivot] = data[randPivot], data[left]
 
 	pivot := data[left]
 	i, j := left+1, right
@@ -144,6 +158,10 @@ func qsHandleInt(data []int, left, right int) {
 		return
 	}
 
+	rand.Seed(time.Now().Unix())
+	randPivot := rand.Int()%(right-left) + left
+	data[left], data[randPivot] = data[randPivot], data[left]
+
 	pivot := data[left]
 	i, j := left+1, right
 
@@ -185,6 +203,10 @@ func qsHandleInt32(data []int32, left, right int) {
 		return
 	}
 
+	rand.Seed(time.Now().Unix())
+	randPivot := rand.Int()%(right-left) + left
+	data[left], data[randPivot] = data[randPivot], data[left]
+
 	pivot := data[left]
 	i, j := left+1, right
 
@@ -225,6 +247,10 @@ func qsHandleInt64(data []int64, left, right int) {
 	if left >= right {
 		return
 	}
+
+	rand.Seed(time.Now().Unix())
+	randPivot := rand.Int()%(right-left) + left
+	data[left], data[randPivot] = data[randPivot], data[left]
 
 	pivot := data[left]
 	i, j := left+1, right
