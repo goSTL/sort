@@ -58,7 +58,7 @@ func qsHandle(data []interface{}, left, right int, cmp func(i, j interface{}) bo
 	qsHandle(data, j+1, right, cmp)
 }
 
-//QuickSortFolat32 is a QuickSort function for float32, sorting from smallest to biggest.
+//QuickSortFloat32 is a QuickSort function for float32, sorting from smallest to biggest.
 func QuickSortFloat32(data []float32) {
 	qsHandleFloat32(data, 0, len(data)-1)
 }
