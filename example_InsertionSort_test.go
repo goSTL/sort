@@ -6,11 +6,6 @@ import (
 	"github.com/goSTL/sort"
 )
 
-type student struct {
-	num  int
-	name string
-}
-
 func ExampleInsertionSort() {
 	stu := []student{{5, "sam"}, {3, "lily"}, {7, "jacky"}, {1, "willy"}, {2, "steve"}, {3, "kally"}, {1, "gay"}, {-1, "10"}}
 	fmt.Println("original: \t", stu)
