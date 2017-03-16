@@ -4,7 +4,7 @@ import (
 	"reflect"
 )
 
-//This is a custom Merge Sort with parallel compution in 8 threads.
+//MergeSortPara is a custom Merge Sort with parallel compution in 8 threads.
 //You can define the comparion regulations all by yourself.
 //
 //You should use runtime.GOMAXPROS(int) to set the maximum number of CPUs that can be executing simultaneously.

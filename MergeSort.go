@@ -4,7 +4,7 @@ import (
 	"reflect"
 )
 
-//Tis is a custom Merge Sort.
+//MergeSort is a custom Merge Sort.
 //You can define the comparion regulations all by yourself.
 //
 //You should write your own compare function with definition
@@ -63,7 +63,7 @@ func merge(data []interface{}, M int, cmp func(i, j interface{}) bool) {
 	}
 }
 
-//MergeSort for int, sorting from smallest to biggest.
+//MergeSortInt is a MergeSort function for int, sorting from smallest to biggest.
 func MergeSortInt(data []int) {
 	M := len(data) / 2
 	if len(data) == 1 {
@@ -103,7 +103,7 @@ func mergeInt(data []int, M int) {
 	}
 }
 
-//MergeSort for int32, sorting from smallest to biggest.
+//MergeSortInt32 is a MergeSort function for int32, sorting from smallest to biggest.
 func MergeSortInt32(data []int32) {
 	M := len(data) / 2
 	if len(data) == 1 {
@@ -143,7 +143,7 @@ func mergeInt32(data []int32, M int) {
 	}
 }
 
-//MergeSort for int64, sorting from smallest to biggest.
+//MergeSortInt64 is a MergeSort function for int64, sorting from smallest to biggest.
 func MergeSortInt64(data []int64) {
 	M := len(data) / 2
 	if len(data) == 1 {
@@ -183,7 +183,7 @@ func mergeInt64(data []int64, M int) {
 	}
 }
 
-//MergeSort for float32, sorting from smallest to biggest.
+//MergeSortFloat32 is a MergeSort function for float32, sorting from smallest to biggest.
 func MergeSortFloat32(data []float32) {
 	M := len(data) / 2
 	if len(data) == 1 {
@@ -223,7 +223,7 @@ func mergeFloat32(data []float32, M int) {
 	}
 }
 
-//MergeSort for float64, sorting from smallest to biggest.
+//MergeSortFloat64 is a MergeSort function for float64, sorting from smallest to biggest.
 func MergeSortFloat64(data []float64) {
 	M := len(data) / 2
 	if len(data) == 1 {

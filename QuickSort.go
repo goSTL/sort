@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-//QuickSort() is a custom quick sort.
+//QuickSort is a custom quick sort.
 //You should build your own compare function to sort in your own regulations.
 func QuickSort(data interface{}, cmp func(i, j interface{}) bool) []interface{} {
 	value := reflect.ValueOf(data)
@@ -58,7 +58,7 @@ func qsHandle(data []interface{}, left, right int, cmp func(i, j interface{}) bo
 	qsHandle(data, j+1, right, cmp)
 }
 
-//QuickSort for float32, sorting from smallest to biggest.
+//QuickSortFolat32 is a QuickSort function for float32, sorting from smallest to biggest.
 func QuickSortFloat32(data []float32) {
 	qsHandleFloat32(data, 0, len(data)-1)
 }
@@ -103,7 +103,7 @@ func qsHandleFloat32(data []float32, left, right int) {
 	qsHandleFloat32(data, j+1, right)
 }
 
-//QuickSort for float64, sorting from smallest to biggest.
+//QuickSortFloat64 is a QuickSort function for float64, sorting from smallest to biggest.
 func QuickSortFloat64(data []float64) {
 	qsHandleFloat64(data, 0, len(data)-1)
 }
@@ -148,7 +148,7 @@ func qsHandleFloat64(data []float64, left, right int) {
 	qsHandleFloat64(data, j+1, right)
 }
 
-//QuickSort for int, sorting from smallest to biggest.
+//QuickSortInt is a QuickSort function for int, sorting from smallest to biggest.
 func QuickSortInt(data []int) {
 	qsHandleInt(data, 0, len(data)-1)
 }
@@ -193,7 +193,7 @@ func qsHandleInt(data []int, left, right int) {
 	qsHandleInt(data, j+1, right)
 }
 
-//QuickSort for int32, sorting from smallest to biggest.
+//QuickSortInt32 is a QuickSort function for int32, sorting from smallest to biggest.
 func QuickSortInt32(data []int32) {
 	qsHandleInt32(data, 0, len(data)-1)
 }
@@ -238,7 +238,7 @@ func qsHandleInt32(data []int32, left, right int) {
 	qsHandleInt32(data, j+1, right)
 }
 
-//QuickSort for int64, sorting from smallest to biggest.
+//QuickSortInt64 is a QuickSort function for int64, sorting from smallest to biggest.
 func QuickSortInt64(data []int64) {
 	qsHandleInt64(data, 0, len(data)-1)
 }
