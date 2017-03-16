@@ -6,11 +6,11 @@ Sort
 ====
 sort whatever you want
 
-#Index
+## Index
 -   [Merge Sort](https://github.com/goSTL/sort#merge-sort)
 -   [Quick Sort](https://github.com/goSTL/sort#quick-sort)
 
-#Merge Sort
+## Merge Sort
 **MergeSort()**
 
 MergeSort() is a custom Merge Sort function. You can define the comparion regulations all by yourself.
@@ -62,7 +62,7 @@ output:
     []student: 	 [{1 willy} {2 steve} {3 lily} {5 sam} {7 jacky}]
 
 
-#Quick Sort
+## Quick Sort
 **QuickSort()**
 
 QuickSort() is a custom quick sort.
