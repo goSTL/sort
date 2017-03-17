@@ -1,9 +1,16 @@
 package sort
 
-import (
-	"reflect"
-)
+import "reflect"
 
+// HeapSort
+// This is a custom Heap Sort
+// You MUST define the compare function by yourself
+// compare function type: func(i,j interface{}) bool
+//
+// input: func([]interface{}, func(i,j interface{}) bool) []interface{}
+//
+// output slice and won't change the origin one
+// data = HeapSort(data, cmp), if you want to change origin slice
 func HeapSort(data interface{}, cmp func(i, j interface{}) bool) []interface{} {
 	value := reflect.ValueOf(data)
 	dataS := make([]interface{}, value.Len())
@@ -55,7 +62,12 @@ func maxHeap(data []interface{}, len int, cmp func(i, j interface{}) bool) {
 	return
 }
 
-// INT
+// HeapSortInt
+// Heap Sort in Int type, sorting from small to big
+//
+// Input slice func(Int[])
+//
+// No output, just change origin slice
 func HeapSortInt(dataS []int) {
 	heapifyInt(dataS, len(dataS)/2-1, len(dataS))
 	maxHeapInt(dataS, len(dataS))
@@ -101,7 +113,12 @@ func maxHeapInt(data []int, len int) {
 	return
 }
 
-// INT32
+// HeapSortInt32
+// Heap Sort in Int32 type, sorting from small to big
+//
+// Input slice func(Int32[])
+//
+// No output, just change origin slice
 func HeapSortInt32(dataS []int32) {
 	heapifyInt32(dataS, len(dataS)/2-1, len(dataS))
 	maxHeapInt32(dataS, len(dataS))
@@ -147,7 +164,12 @@ func maxHeapInt32(data []int32, len int) {
 	return
 }
 
-// INT64
+// HeapSortInt64
+// Heap Sort in Int64 type, sorting from small to big
+//
+// Input slice func(Int64[])
+//
+// No output, just change origin slice
 func HeapSortInt64(dataS []int64) {
 	heapifyInt64(dataS, len(dataS)/2-1, len(dataS))
 	maxHeapInt64(dataS, len(dataS))
@@ -193,7 +215,12 @@ func maxHeapInt64(data []int64, len int) {
 	return
 }
 
-// FLOAT32
+// HeapSortFloat32
+// Heap Sort in Float32 type, sorting from small to big
+//
+// Input slice func(Float32[])
+//
+// No output, just change origin slice
 func HeapSortFloat32(dataS []float32) {
 	heapifyFloat32(dataS, len(dataS)/2-1, len(dataS))
 	maxHeapFloat32(dataS, len(dataS))
@@ -239,7 +266,12 @@ func maxHeapFloat32(data []float32, len int) {
 	return
 }
 
-// FLOAT64
+// HeapSortFloat64
+// Heap Sort in Float64 type, sorting from small to big
+//
+// Input slice func(Float64[])
+//
+// No output, just change origin slice
 func HeapSortFloat64(dataS []float64) {
 	heapifyFloat64(dataS, len(dataS)/2-1, len(dataS))
 	maxHeapFloat64(dataS, len(dataS))
