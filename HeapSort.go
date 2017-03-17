@@ -2,6 +2,7 @@ package sort
 
 import "reflect"
 
+// HeapSort
 // This is a custom Heap Sort
 // You MUST define the compare function by yourself
 // compare function type: func(i,j interface{}) bool
@@ -61,7 +62,7 @@ func maxHeap(data []interface{}, len int, cmp func(i, j interface{}) bool) {
 	return
 }
 
-// INT
+// HeapSortInt
 // Heap Sort in Int type, sorting from small to big
 //
 // Input slice func(Int[])
@@ -112,7 +113,7 @@ func maxHeapInt(data []int, len int) {
 	return
 }
 
-// INT32
+// HeapSortInt32
 // Heap Sort in Int32 type, sorting from small to big
 //
 // Input slice func(Int32[])
@@ -163,7 +164,7 @@ func maxHeapInt32(data []int32, len int) {
 	return
 }
 
-// INT64
+// HeapSortInt64
 // Heap Sort in Int64 type, sorting from small to big
 //
 // Input slice func(Int64[])
@@ -214,7 +215,7 @@ func maxHeapInt64(data []int64, len int) {
 	return
 }
 
-// FLOAT32
+// HeapSortFloat32
 // Heap Sort in Float32 type, sorting from small to big
 //
 // Input slice func(Float32[])
@@ -265,7 +266,7 @@ func maxHeapFloat32(data []float32, len int) {
 	return
 }
 
-// FLOAT64
+// HeapSortFloat64
 // Heap Sort in Float64 type, sorting from small to big
 //
 // Input slice func(Float64[])

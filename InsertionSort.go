@@ -2,7 +2,8 @@ package sort
 
 import "reflect"
 
-// This is a custom Merge Sort
+// InsertionSort
+// This is a custom Insertion Sort
 // You MUST define the compare function by yourself
 // compare function type: func(i,j interface{}) bool
 //
@@ -28,7 +29,7 @@ func InsertionSort(data interface{}, cmp func(i, j interface{}) bool) []interfac
 	return dataS
 }
 
-// INT
+// InsertionSortInt
 // Insertion Sort in Int type, sorting from small to big
 //
 // Input slice func([]int)
@@ -46,7 +47,7 @@ func InsertionSortInt(dataS []int) {
 	}
 }
 
-// INT32
+// InsertionSortInt32
 // Insertion Sort in Int32 type, sorting from small to big
 //
 // Input slice func([]int32)
@@ -64,7 +65,7 @@ func InsertionSortInt32(dataS []int32) {
 	}
 }
 
-// INT64
+// InsertionSortInt64
 // Insertion Sort in Int64 type, sorting from small to big
 //
 // Input slice func([]int64)
@@ -82,7 +83,7 @@ func InsertionSortInt64(dataS []int64) {
 	}
 }
 
-// FLOAT32
+// InsertionSortFloat32
 // Insertion Sort in Float32 type, sorting from small to big
 //
 // Input slice func([]float32)
@@ -100,7 +101,7 @@ func InsertionSortFloat32(dataS []float32) {
 	}
 }
 
-// FLOAT64
+// InsertionSortFloat64
 // Insertion Sort in Float64 type, sorting from small to big
 //
 // Input slice func([]float64)
